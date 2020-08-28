@@ -1,7 +1,7 @@
 {
   "name": "pm2-scaffolding",
   "version": "1.0.0",
-  "description": "",
+  "description": "pm2 scaffolding",
   "main": "app.js",
   "scripts": {
     "dev": "pm2 start app.js --watch --no-daemon",
@@ -13,8 +13,16 @@
     "monitor": "pm2 monit",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinnerr0/pm2-scaffolding.git"
+  },
+  "author": "sinnerr0@gmail.com",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinnerr0/pm2-scaffolding/issues"
+  },
+  "homepage": "https://github.com/sinnerr0/pm2-scaffolding#readme",
   "dependencies": {
     "express": "^4.17.1",
     "pm2": "^4.4.1"
