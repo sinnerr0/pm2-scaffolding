@@ -1,0 +1,29 @@
+{
+  "name": "pm2-scaffolding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "pm2 start app.js --watch --no-daemon",
+    "stop": "pm2 stop app.js",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "poststart": "pm2 logs",
+    "delete": "pm2 delete all",
+    "list": "pm2 list",
+    "monitor": "pm2 monit",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^4.4.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 150
+  }
+}
